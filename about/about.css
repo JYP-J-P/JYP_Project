@@ -1,0 +1,66 @@
+@charset 'utf-8';
+
+.flex {
+  display: flex;
+}
+.title {
+  width: 95%;
+  border-bottom: 2px solid #000000;
+  margin: 0 auto;
+}
+.title h2 {
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+  margin: 120px 0;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+/***** header ******/
+.header_bar {
+  width: 95%;
+  margin: 20px auto;
+  height: 50px;
+  justify-content: space-between;
+}
+.header_bar .logo {
+  background: #ffffff url(./images/logo.png) no-repeat 50% / 70%;
+  width: 17%;
+  border-radius: 10px;
+}
+.header_bar ul {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 62%;
+  justify-content: space-around;
+  align-items: center;
+}
+.header_bar .login {
+  background-color: #ffffff;
+  width: 17%;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+/***** map ******/
+.store_continer {
+  width: 95%;
+  margin: 0 auto;
+}
+.store_continer .store_wrap {
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.store_continer .store_wrap .store_box {
+  width: 49.5%;
+  background-color: #fff;
+}
+.store_continer .store_wrap .store_box .store_txt {
+  flex-direction: column;
+}
+.store_continer .store_wrap .store_box .store_txt .store_addresses {
+}
+.store_continer .store_wrap .store_box .store_txt .store_info {
+}
