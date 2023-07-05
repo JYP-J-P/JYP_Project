@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body {
+  width: 100%;
+  background-color: var(--bg-color);
+  font-family: var(--en-txt-font);
+  color: var(--txt-color);
+}
+.flex {
+  display: flex;
+}
+
+/***** header *****/
+header {
+}
+header nav {
+  align-items: center;
+  /* width: 95%; */
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size-20);
+}
+header nav h1 {
+  width: 10%;
+  text-indent: -9999px;
+  background: #ffffff url(../common/logo.png) no-repeat 50% /120px;
+  padding: 12px;
+  border-radius: 5px;
+}
+header nav menu {
+  width: 80%;
+  justify-content: space-around;
+  background-color: #ffffff;
+  margin: 0 10px;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+header nav a {
+  display: block;
+  height: 100%;
+}
+header nav .account {
+  width: 10%;
+  background-color: #ffffff;
+  height: 100%;
+  padding: 12px;
+  border-radius: 5px;
+}
+/***** login *****/
+.sub_login {
+  text-align: center;
+}
+.sub_login .login {
+}
+.sub_login .login img {
+  width: 50px;
+}
+.sub_login .login h1 {
+}
+.sub_login .login input {
+}
+.sub_login .login button {
+}
+.sub_login .login p {
+}
+.sub_login .login p a {
+}
+.sub_login .top {
+}
+.sub_login .middle {
+}
+.sub_login .bottom {
+}
+.sub_login .bottom {
+}
