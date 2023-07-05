@@ -2,6 +2,7 @@
 
 body {
   background-color: #f4f4f4;
+  color: #131313;
 }
 .flex {
   display: flex;
@@ -38,7 +39,7 @@ body {
   justify-content: space-between;
 }
 .header_bar .logo {
-  background: #ffffff url(./images/logo.png) no-repeat 50% / 70%;
+  background: #ffffff url(../common/logo.png) no-repeat 50% / 70%;
   width: 17%;
   border-radius: 5px;
 }
@@ -150,7 +151,7 @@ footer {
 .foot_key .keybox {
   width: 65px;
   height: 130px;
-  background: url(./images/key.png) no-repeat 50% / 90%;
+  background: url(../common/key.png) no-repeat 50% / 90%;
   transform: rotate(30deg);
 }
 .foot_sns,
