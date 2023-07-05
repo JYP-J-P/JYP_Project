@@ -40,7 +40,7 @@ body {
 .header_bar .logo {
   background: #ffffff url(./images/logo.png) no-repeat 50% / 70%;
   width: 17%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .header_bar ul {
   background-color: #ffffff;
