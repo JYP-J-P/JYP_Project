@@ -9,7 +9,7 @@ body {
 .title {
   text-transform: capitalize;
   width: 95%;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #131313;
   margin: 0 auto;
 }
 .title h2 {
@@ -21,7 +21,7 @@ body {
 .under {
   padding: 10px 5px;
   display: block;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #131313;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -84,7 +84,7 @@ body {
 .store_continer .store_wrap .store_box .store_txt .store_addresses h3 {
   padding: 10px 5px;
   display: block;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #131313;
   font-weight: 700;
   font-size: 3.5rem;
   color: #bcbcbc;
@@ -136,12 +136,40 @@ body {
 /***** foot ******/
 footer {
   width: 95%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 .foot_key {
-  justify-content: center;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.foot_key .keybox {
+  width: 65px;
+  height: 130px;
+  background: url(./images/key.png) no-repeat 50% / 90%;
+  transform: rotate(30deg);
 }
 .foot_sns,
 .foot_go {
   justify-content: space-between;
+  border-bottom: 1px solid #131313;
+  padding: 10px;
+}
+.foot_sns .sns {
+  width: 15%;
+  justify-content: space-between;
+}
+.foot_go h3 {
+  width: 30%;
+}
+.foot_go h3:last-child {
+  text-align: right;
+}
+.foot_go .foot_name {
+  width: 40%;
+  justify-content: space-around;
 }
