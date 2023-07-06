@@ -8,6 +8,7 @@
 
 /* font-family: 'Gowun Batang', serif; --kr-sub-font */
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
+
 /* 변수 선언 */
 :root {
   /* 컬러 */
@@ -36,5 +37,10 @@
   color: var(--bg-color);
 }
 
-@keyframes {
+header,
+footer {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
