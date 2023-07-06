@@ -2,7 +2,7 @@
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-  let submain = $('.sub_main').offset().top;
+  let submain = $('.main_text_box1').offset().top;
   if (scroll >= submain) {
     $('.top_btn').addClass('active');
   } else {
@@ -15,5 +15,18 @@ $('.top_btn').on('click', (e) => {
   scrollTo({
     top: 0,
     behavior: 'smooth',
+  });
+});
+
+$(document).ready(function () {
+  $('.main_container').vegas({
+    slides: [
+      { src: './images/main_img.png' },
+      { src: './images/main_img2.png' },
+    ],
+    timer: true,
+    delay: 5000,
+    overlay: 'overlays/04.png', // 이미지 위에 필터처럼 사용
+    // shuffle: true,
   });
 });
