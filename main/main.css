@@ -38,6 +38,8 @@ body {
   margin: 20px auto;
   height: 50px;
   justify-content: space-between;
+  /* position: fixed;
+  z-index: 999; */
 }
 .header_bar .logo {
   background: #ffffff url(../common/logo.png) no-repeat 50% / 70%;
@@ -116,6 +118,10 @@ header .logo {
 */
 
 /********** main **********/
+
+main .main_img {
+  margin-top: 50px;
+}
 
 .main p {
   margin-top: 50px;
@@ -439,7 +445,7 @@ footer {
   width: 65px;
   height: 130px;
   background: url(../common/key.png) no-repeat 50% / 90%;
-  transform: rotate(30deg);
+  transform: rotate(9deg);
 }
 .foot_sns,
 .foot_go {
@@ -463,79 +469,44 @@ footer {
   font-family: var(--kr-sub-font);
 }
 
-/*
-footer {
-  height: 60vh;
-  padding: 20px;
-  display: grid;
-  place-items: center;
-}
-
-footer a {
-  transition: 0.2s;
-}
-
-footer a:hover {
+footer .top_btn {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
   color: #000;
-  transform: translateY(-10px);
 }
 
-footer .middle {
-  padding-top: 200px;
-}
-
-footer .sns {
-  width: 100%;
-  justify-content: space-between;
-  position: relative;
-}
-
-footer .sns ul li {
-  margin: 0 50px;
-}
-
-footer .sns::after {
-  content: '';
-  bottom: 0;
+footer .top_btn a span {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: black;
-  height: 1px;
-  width: 100%;
-}
-
-footer .name {
-  width: 100%;
-  justify-content: space-between;
-  position: relative;
-}
-
-footer .name::after {
-  content: '';
-  bottom: 0;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: black;
-  height: 1px;
-  width: 100%;
-}
-
-footer .name ul {
-  position: absolute;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-footer .name ul li {
-  margin: 0 50px;
+footer .top_btn svg {
+  fill: #222;
 }
 
-footer .middle span a {
-  display: block;
-  width: 70px;
-  margin: 0 80px;
+footer .top_btn:hover {
+  animation: top_btn 0.3s infinite linear alternate;
+  animation-name: top_btn;
 }
 
-*/
+@keyframes top_btn {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/********** to top 버튼 작동 class **********/
+
+footer .top_btn.active {
+  opacity: 1;
+  pointer-events: all;
+}

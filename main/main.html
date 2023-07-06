@@ -11,19 +11,22 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="./main.css">
+
+    <script defer src="../common/jquery-3.7.0.min.js"></script>
+    <script defer src="./main.js"></script>
     <title>urbanic</title>
 </head>
 
 <body>
     <nav>
-        <div class="header_bar flex">
+        <div class="header_bar flex active">
             <div class="logo"></div>
             <ul class="flex">
                 <li><a href="#">shop</a></li>
-                <li><a href="#">colection</a></li>
-                <li><a href="#">about</a></li>
+                <li><a href="../collection/collection.html">colection</a></li>
+                <li><a href="../about/about.html">about</a></li>
             </ul>
-            <div class="login">account</div>
+            <div class="login"><a href="../account/account.html">account</a></div>
         </div>
     </nav>
 
@@ -40,7 +43,7 @@
 
     <!-- main -->
     <section class="main">
-        <img src="./images/main_img.png" alt="메인 첫번째 이미지">
+        <img src="./images/main_img.png" alt="메인 첫번째 이미지" class="main_img">
         <div class="main_text_box1">
             <h1>urbanic30</h1>
             <p>Urbanic 30은 자연스러운 멋을 가진 여자들을 위해 탄생했습니다.
@@ -116,7 +119,7 @@
         <div class="last_main_sub_img flex">
             <figure>
                 <img src="./images/last_main_sub_img1.png" alt="colloction 분홍꽃 이미지">
-                <figcaption>collections <a href="#"><span class="material-symbols-outlined">
+                <figcaption>collections<a href="#"><span class="material-symbols-outlined">
                             add
                         </span></a></figcaption>
 
@@ -155,38 +158,16 @@
             </ul>
             <h3>2023.07.02</h3>
         </div>
+
+        <!-- to top btn -->
+
+        <div class="top_btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960"
+                    width="48">
+                    <path
+                        d="m282-225-42-42 240-240 240 240-42 42-198-198-198 198Zm0-253-42-42 240-240 240 240-42 42-198-198-198 198Z" />
+                </svg><span>top</span></a></div>
     </footer>
 
-    <!-- footer -->
-    <!-- <footer>
-        <div class="middle flex">
-            <h1><a href="#">faq</a></h1>
-            <span><a href="#"><img src="./images/key.png" alt="key로고 이미지"></a></span>
-            <h1><a href="#">q&a</a></h1>
-        </div>
-
-        <div class="sns flex">
-            <span>Privacy policy</span>
-            <ul class="flex">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            <span>Thanks for watch</span>
-        </div>
-
-        <div class="name flex">
-            <span>© 2023 ABSOLUT PROJECT J&P</span>
-            <ul class="flex">
-                <li>Git Hub - </li>
-                <li><a href="#">이성우</a></li>
-                <li><a href="#">김나현</a></li>
-                <li><a href="#">이현경</a></li>
-                <li><a href="#">오다은</a></li>
-            </ul>
-            <span>2023.06.30</span>
-        </div>
-
-    </footer> -->
 </body>
 
 </html>
