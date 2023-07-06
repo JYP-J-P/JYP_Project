@@ -5,30 +5,32 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>about</title>
+  <!-- css -->
   <link rel="stylesheet" href="../common/reset.css" />
   <link rel="stylesheet" href="../common/variable.css" />
   <link rel="stylesheet" href="./about.css" />
+  <!-- jQuery -->
+  <script src="../common/jquery-3.7.0.min.js"></script>
+  <script defer src="../common/header.js"></script>
+  <!-- jQuery-kakao-map -->
+  <script type="text/javascript"
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=31dbad97ee85ffcde0d5d78f11eb716b"></script>
+  <script defer src="./kakaoApi.js"></script>
 </head>
-<!-- 
-w:95%
-
-
- -->
 
 <body>
   <!-- header -->
-  <nav>
-    <div class="header_bar flex">
-      <div class="logo"></div>
+  <header>
+    <nav class="header_bar flex">
+      <div class="logo">로고</div>
       <ul class="flex">
         <li><a href="#">shop</a></li>
         <li><a href="#">colection</a></li>
         <li><a href="#">about</a></li>
       </ul>
       <div class="login">account</div>
-    </div>
-  </nav>
-  <section></section>
+    </nav>
+  </header>
   <!-- title -->
   <section class="title">
     <h2>store addresses</h2>
@@ -36,7 +38,9 @@ w:95%
   <!-- map -->
   <section class="store_continer">
     <div class="store_wrap flex">
-      <div class="store_map">지도</div>
+      <div class="store_map">
+        <div id="map" style="width:100%;height:100%;"></div>
+      </div>
       <div class="store_box">
         <div class="store_txt flex">
           <div class="store_addresses w97">
@@ -99,7 +103,7 @@ w:95%
       </ul>
       <h3>Thanks for watch</h3>
     </div>
-    <div class="foot_go flex">
+    <div class="foot_git flex">
       <h3>© 2023 ABSOLUT PROJECT JYP</h3>
       <ul class="foot_name flex">
         <li><a href="#">이성우</a></li>
