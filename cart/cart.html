@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>account</title>
+  <title>cart</title>
   <link rel="stylesheet" href="../common/reset.css">
   <link rel="stylesheet" href="../common/variable.css">
-  <link rel="stylesheet" href="./account.css">
+  <link rel="stylesheet" href="cart.css">
   <script src="../common/jquery-3.7.0.min.js"></script>
-  <script defer src="./account.js"></script>
 </head>
-
 <body>
   <!-- header -->
   <nav class="header_bar flex">
@@ -27,40 +24,16 @@
     </menu>
   </nav>
 </header>
-  <!-- login -->
-  <div class="sub_login flex">
+  <!-- cart -->
+  <div class="cart flex">
     <img src="../common/key.png" alt="30 숫자가 있는 열쇠 이미지">
-    <h2>login</h2>
-    <section class="login flex">
-      <input type="text" name="userName" id="user_name" placeholder="ID">
-      <input type="text" name="userPw" placeholder="PW">
-      <button><a href="#">login</a></button>
-    </section>
-    <section class="reserch flex">
-      <p><a href="#">find id</a>
-      <p><a href="#">password</a></p>
-    </section>
-    <ul class="top">
-      <a href="#" class="flex">
-        <li>REGISTER</li>
-        <li>회원가입</li>
-      </a>
-    </ul>
-    <ul class="middle">
-      <a href="#" class="flex">
-        <li>GUEST ORDER</li>
-        <li>비회원으로 구매</li>
-      </a>
-    </ul>
-    <ul class="bottom flex">
-      <a href="#" class="flex">
-        <li>ORDER TRACKING</li>
-        <li>비회원 주문조회</li>
-      </a>
-    </ul>
+    <h2>cart(0)</h2>
+    <h3>장바구니에 담긴 상품이 없습니다.</h3>
+    <button><a href="#">check out</a></button>
+    <button><a href="../main/main.html">back to shop</a></button>
   </div>
   <!-- footer -->
-  <footer>
+   <footer>
     <div class="footer_info flex">
       <h3>© 2023 ABSOLUT PROJECT J&P</h3>
       <ul class="flex">
@@ -71,5 +44,4 @@
     </div>
   </footer>
 </body>
-
 </html>

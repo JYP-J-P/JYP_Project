@@ -55,95 +55,38 @@ body {
   text-align: center;
   line-height: 50px;
 }
-
-/***** login *****/
-.sub_login {
-  padding: 160px 0 50px;
-  text-transform: uppercase;
+/***** cart *****/
+.cart {
   flex-direction: column;
   align-items: center;
+  padding: 160px 0 235px;
+  text-transform: uppercase;
 }
-.sub_login img {
+.cart img {
   width: 50px;
   margin: 30px 0 10px;
   transform: rotate(-17deg);
-  /* animation: ; */
 }
-.sub_login h2 {
+.cart h2 {
   font-weight: bold;
   font-size: var(--font-size-50);
-  margin-bottom: 20px;
 }
-.sub_login .login {
-  flex-direction: column;
+.cart h3 {
+  font-family: var(--kr-sub-font);
+  font-size: var(--font-size-28);
+  margin: 50px 0 60px;
 }
-input[type="text"] {
-  border: 0;
-  background-color: var(--bg-color);
-  border-bottom: 1px solid var(--txt-color);
-  color: var(--txt-sub-color);
-  font-family: var(--en-txt-font);
-  width: 400px;
-  padding: 5px 10px;
-  font-size: var(--sub-size-24);
-}
-input[name="userPw"] {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-button {
-  text-transform: uppercase;
+.cart button {
   border: 1px solid #131313;
   padding: 15px 0;
   font-size: var(--font-size-28);
   font-family: var(--en-txt-font);
-}
-button a {
-  display: block;
-}
-.sub_login .top li:nth-child(1),
-.sub_login .middle li:nth-child(1),
-.sub_login .bottom li:nth-child(1) {
-  color: var(--txt-color);
-  font-weight: bold;
-  font-size: var(--sub-size-24);
-}
-.sub_login .top li:nth-child(2),
-.sub_login .middle li:nth-child(2),
-.sub_login .bottom li:nth-child(2) {
-  color: var(--txt-sub-color);
-  font-family: var(--kr-sub-font);
-  font-size: var(--font-size-18);
-}
-.sub_login .reserch {
-  margin: 20px 0 0;
-  font-size: var(--sub-size-24);
-  color: var(--txt-sub-color);
-  position: relative;
-  justify-content: space-between;
-  width: 300px;
-}
-.sub_login .reserch p:nth-child(1)::after {
-  content: "/";
-  display: block;
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  top: 0;
-  left: 45%;
-  transform: translateX(-45%);
-}
-.sub_login .top a,
-.sub_login .middle a,
-.sub_login .bottom a {
   width: 400px;
-  border-bottom: 1px solid #131313;
-  padding-top: 25px;
-  justify-content: space-between;
-  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
-.sub_login .bottom {
-  margin-bottom: 100px;
+.cart button a {
+  display: block;
 }
 /***** footer *****/
 footer {
