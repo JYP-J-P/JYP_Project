@@ -92,6 +92,10 @@ body {
   justify-content: center;
   align-items: center;
   font-size: var(--font-size-20);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .main_collection .collection figure:nth-child(1),
 .main_collection .collection figure:nth-child(7),
@@ -110,7 +114,6 @@ body {
   border-radius: 10px;
   filter: grayscale(100%);
   transition: 0.4s;
-  cursor: pointer;
 }
 .main_collection .collection figure img:hover {
   filter: grayscale(0);
