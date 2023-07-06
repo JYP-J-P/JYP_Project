@@ -8,52 +8,60 @@
   <link rel="stylesheet" href="../common/reset.css">
   <link rel="stylesheet" href="../common/variable.css">
   <link rel="stylesheet" href="./account.css">
+
+  <script src="../common/jquery-3.7.0.min.js"></script>
+  <script defer src="./account.js"></script>
 </head>
 
 <body>
   <!-- header -->
   <header>
-    <nav class="flex">
-      <h1>로고</h1>
-      <menu class="flex">
+    <nav class="header_bar flex">
+      <div class="logo">로고</div>
+      <ul class="flex">
         <li><a href="#">shop</a></li>
-        <li><a href="#">collection</a></li>
+        <li><a href="#">colection</a></li>
         <li><a href="#">about</a></li>
-      </menu>
-      <div class="account"><a href="#">accout</a></div>
+      </ul>
+      <div class="login">account</div>
     </nav>
   </header>
   <!-- login -->
-  <div class="sub_login">
-    <section class="login">
-      <img src="../common/key.png" alt="30 숫자가 있는 열쇠 이미지">
-      <h1>login</h1>
-      <input type="text">
-      <input type="text">
-      <button>login</button>
-      <p><a href="#">find</a>
+  <div class="sub_login flex">
+    <img src="../common/key.png" alt="30 숫자가 있는 열쇠 이미지">
+    <h1>login</h1>
+    <section class="login flex">
+      <input type="text" name="userName" id="user_name" placeholder="ID">
+      <input type="text" name="userPw" placeholder="PW">
+      <button><a href="#">login</a></button>
+    </section>
+    <section class="reserch flex">
+      <p><a href="#">find id / </a>
       <p><a href="#">password</a></p>
     </section>
-    <section class="top">
-      <h2>REGISTER</h2>
-      <h3>회원가입</h3>
+    <section class="top flex">
+      <h2><a href="#">REGISTER</a></h2>
+      <h3><a href="#">회원가입</a></h3>
     </section>
-    <section class="middle">
-      <h2>GUEST ORDER</h2>
-      <h3>비회원으로 구매</h3>
+    <section class="middle flex">
+      <h2><a href="#">GUEST ORDER</a></h2>
+      <h3><a href="#">비회원으로 구매</a></h3>
     </section>
-    <section class="bottom">
-      <h2>ORDER TRACKING</h2>
-      <h3>비회원 주문조회</h3>
+    <section class="bottom flex">
+      <h2><a href="#">ORDER TRACKING</a></h2>
+      <h3><a href="#">비회원 주문조회</a></h3>
     </section>
   </div>
+  <!-- footer -->
   <footer>
-    <ul>
-      <li>© 2023 ABSOLUT PROJECT J&P</li>
-      <li><a href="#">faq</a></li>
-      <li><a href="#">q&a</a></li>
-      <li>2023.07.00</li>
-    </ul>
+    <div class="footer_info flex">
+      <h3>© 2023 ABSOLUT PROJECT J&P</h3>
+      <ul class="flex">
+        <li><a href="#">faq</a></li>
+        <li><a href="#">q&a</a></li>
+      </ul>
+      <h3>2023.07.02</h3>
+    </div>
   </footer>
 </body>
 

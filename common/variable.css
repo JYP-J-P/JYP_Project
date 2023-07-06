@@ -15,14 +15,26 @@
   --txt-color: #131313;
   --txt-sub-color: #858585;
   /* 폰트 사이즈 */
+  --font-size-18: 1.125rem;
   --font-size-20: 1.25rem;
-  --sub-size-24: 1.5rem;
+  --font-size-28: 1.75rem;
+  --font-size-40: 2.5rem;
   --font-size-50: 3.125rem;
+
   --main-size-60: 3.75rem;
+  --sub-size-24: 1.5rem;
   /* 폰트 패밀리 */
   --en-txt-font: "Abhaya Libre", -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
   --kr-txt-font: "pretendard", -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   --kr-sub-font: "Gowun Batang", Georgia, "Times New Roman", Times, serif;
+}
+
+::selection {
+  background-color: var(--txt-color);
+  color: var(--bg-color);
+}
+
+@keyframes {
 }
