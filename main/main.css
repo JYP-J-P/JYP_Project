@@ -8,6 +8,17 @@ body {
 h1 {
   text-transform: uppercase;
   font-size: var(--main-size-60);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h2 {
@@ -60,8 +71,7 @@ h2 {
 
 .main .main_container {
   width: 100%;
-  height: calc(100vh - 80px);
-  background-color: black;
+  height: 100vh;
 }
 
 .main p {
@@ -254,7 +264,11 @@ h2 {
   height: 100vh;
   margin-bottom: 20px;
   position: relative;
-  font-size: 25px;
+  font-size: var(--sub-size-24);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .last_main .last_main_img p {
@@ -353,6 +367,10 @@ h2 {
   font-weight: 800;
   text-transform: uppercase;
   transition: 0.3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .last_main_sub_img figure figcaption:hover {
