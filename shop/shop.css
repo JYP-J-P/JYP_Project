@@ -70,6 +70,8 @@ img {
 body {
     background-color: #F4F4F4;
     position: relative;
+    font-family: var(--en-txt-font);
+    color: var(--txt-color);
 }
 
 .shop_scroll {
@@ -94,6 +96,7 @@ body {
     width: 50vw;
     justify-content: space-between;
     margin-bottom: 3vw;
+    font-size: var(--sub-size-24);
 }
 
 .shop_top .shop_menu {
@@ -102,9 +105,15 @@ body {
 
 .shop_top .shop_menu li {
     margin-bottom: 7px;
-    --en-txt-font: "Abhaya Libre", -apple-system, BlinkMacSystemFont,
-    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
-    --font-size-28: 1.75rem;
+    color: var(--txt-sub-color);
+}
+
+.shop_top .shop_menu li a{
+    transition: 0.3s;
+}
+.shop_top .shop_menu li a:hover {
+    color:var(--txt-color);
+
 }
 
 .shop_top img {
@@ -122,23 +131,27 @@ body {
     gap: 30px;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 .shop_item li a {
     text-align: center;
+    font-family: var(--en-txt-font);
 }
 
 .shop_item li a h3 {
-    --font-size-28: 1.75rem;
+    font-size: var(--font-size-20);
+    font-weight:600;
 }
 
 .shop_item li a h4 {
-    --font-size-20: 1.25rem;
+    font-size: var(--font-size-18);
 }
 
 .shop_item li a img {
     object-fit: cover;
     width: 15vw;
+    padding-bottom: 10px;
 }
 
 
