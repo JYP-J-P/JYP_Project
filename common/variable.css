@@ -44,3 +44,21 @@ footer {
   -ms-user-select: none;
   user-select: none;
 }
+
+@keyframes gradient {
+  0% {
+    background-position-x: 0;
+  }
+  25% {
+    background-position-x: -100%;
+  }
+  50% {
+    background-position-x: -200%;
+  }
+  75% {
+    background-position-x: -300%;
+  }
+  100% {
+    background-position-x: -400%;
+  }
+}

@@ -31,16 +31,22 @@ body {
   border-radius: 5px;
   text-indent: -9999pc;
 }
+.header_bar a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .header_bar ul {
   background-color: #ffffff;
   border-radius: 5px;
-  width: 78%;
+  width: 68%;
   justify-content: space-around;
   align-items: center;
 }
-.header_bar .login {
+.header_bar .private {
+  justify-content: space-around;
   background-color: #ffffff;
-  width: 10%;
+  width: 20%;
   border-radius: 5px;
   text-align: center;
   line-height: 50px;
@@ -150,6 +156,7 @@ footer {
 }
 .foot_key h2 {
   font-weight: 700;
+  cursor: pointer;
 }
 .foot_sns,
 .foot_git {
@@ -159,12 +166,14 @@ footer {
   padding: 7px;
 }
 .foot_sns .sns {
+  text-transform: capitalize;
   width: 15%;
   justify-content: space-between;
 }
 .foot_git {
   color: var(--txt-sub-color);
 }
+.foot_git a,
 .foot_git h3 {
   width: 30%;
 }
@@ -177,3 +186,14 @@ footer {
   font-family: var(--kr-sub-font);
   color: var(--txt-color);
 }
+/* .foot_git .foot_name a {
+  background: linear-gradient(90deg, #858585, #f4f4f4, #131313);
+  background-clip: 'text';
+  웹킷 브라우저 지원을 위해 추가
+  -webkit-background-clip: text;
+  background-position-x: 0;
+  background-size: 100%;
+  color: transparent;
+  animation: gradients 5s linear infinite;
+
+} */
