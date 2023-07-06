@@ -78,6 +78,7 @@ body {
   text-align: center;
   line-height: 50px;
 }
+
 /***** map ******/
 .store_continer {
   width: 98%;
@@ -209,6 +210,7 @@ footer {
   padding: 7px;
 }
 .foot_sns .sns {
+  text-transform: capitalize;
   width: 15%;
   justify-content: space-between;
 }
