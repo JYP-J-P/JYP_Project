@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* 설정 */
+
+* {
+    margin: 0;
+    list-style: none;
+    padding:0;
+    text-decoration: none;
+    color:#131313;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+img {
+    object-fit:contain
+}
+
+/***** header ******/
+.header_bar {
+  position: fixed;
+  top: 0;
+  left: 1%;
+  text-transform: uppercase;
+  width: 98%;
+  margin: 10px auto;
+  height: 50px;
+  /* background-color: var(--bg-color); */
+  justify-content: space-between;
+  font-size: var(--font-size-20);
+  z-index: 9999;
+  transition: 0.5s;
+}
+.header_bar .logo {
+  background: #ffffff url(../common/logo.png) no-repeat 50% / 80%;
+  width: 10%;
+  border-radius: 5px;
+  text-indent: -9999pc;
+}
+.header_bar a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header_bar ul {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 68%;
+  justify-content: space-around;
+  align-items: center;
+}
+.header_bar .private {
+  justify-content: space-around;
+  background-color: #ffffff;
+  width: 20%;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+}
+
+  
+/***** background *****/
+
+body {
+    background-color: #F4F4F4;
+    position: relative;
+}
+
+.shop_scroll {
+    width: calc(100% - 150px);
+    height: calc(100vh - 10vw);
+    margin: 100px 0 0 calc(170px - 5vw);
+}
+
+.shop_bg {
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: -9;
+    object-fit: cover;
+    height: 100vh;
+    width: 45vw;
+}
+
+/***** shop_top *****/
+
+.shop_top {
+    width: 50vw;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+}
+
+.shop_top .shop_menu {
+    font-weight: bold;
+}
+
+.shop_top .shop_menu li {
+    margin-bottom: 7px;
+    --en-txt-font: "Abhaya Libre", -apple-system, BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
+    --font-size-28: 1.75rem;
+}
+
+.shop_top img {
+    width: 100px;
+}
+
+/***** 제품 이미지 파트 *****/
+
+.shop_item_list {
+    width: 50vw;
+}
+
+.shop_item {
+    width: 50vw;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop_item li a {
+    text-align: center;
+}
+
+.shop_item li a h3 {
+    --font-size-28: 1.75rem;
+}
+
+.shop_item li a h4 {
+    --font-size-20: 1.25rem;
+}
+
+.shop_item li a img {
+    object-fit: cover;
+    width: 15vw;
+}
+
+
+@media (max-width: 1260px) {
+    .shop_top {
+        width: 40vw;
+        justify-content: space-between;
+        margin-bottom: 3vw;
+    }
+    .shop_item {
+        width: 40vw;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .shop_item li a img {
+        object-fit: cover;
+        width: 18vw;
+    }
+}

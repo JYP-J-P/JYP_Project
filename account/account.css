@@ -5,6 +5,10 @@ body {
   background-color: var(--bg-color);
   font-family: var(--en-txt-font);
   color: var(--txt-color);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .flex {
   display: flex;
@@ -56,16 +60,12 @@ body {
   width: 50px;
   margin: 30px 0 10px;
   transform: rotate(-17deg);
-  animation: ;
+  /* animation: ; */
 }
 .sub_login h1 {
   font-weight: bold;
   font-size: var(--font-size-50);
   margin-bottom: 20px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .sub_login .login {
   flex-direction: column;
@@ -94,35 +94,49 @@ button {
 button a {
   display: block;
 }
-.sub_login h2 {
+.sub_login .top li:nth-child(1),
+.sub_login .middle li:nth-child(1),
+.sub_login .bottom li:nth-child(1) {
   color: var(--txt-color);
   font-weight: bold;
   font-size: var(--sub-size-24);
 }
-.sub_login h3 {
+.sub_login .top li:nth-child(2),
+.sub_login .middle li:nth-child(2),
+.sub_login .bottom li:nth-child(2) {
   color: var(--txt-sub-color);
   font-family: var(--kr-sub-font);
   font-size: var(--font-size-18);
-}
-.sub_login .top,
-.sub_login .middle,
-.sub_login .bottom {
-  width: 400px;
-  border-bottom: 1px solid #131313;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-top: 25px;
-}
-.sub_login .bottom {
-  margin-bottom: 100px;
 }
 .sub_login .reserch {
   margin: 20px 0 0;
   font-size: var(--sub-size-24);
   color: var(--txt-sub-color);
+  position: relative;
+  justify-content: space-between;
+  width: 300px;
 }
-.sub_login .reserch p:nth-child(1) {
-  padding-right: 5px;
+.sub_login .reserch p:nth-child(1)::after {
+  content: "/";
+  display: block;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  transform: translateX(-45%);
+}
+.sub_login .top a,
+.sub_login .middle a,
+.sub_login .bottom a {
+  width: 400px;
+  border-bottom: 1px solid #131313;
+  padding-top: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub_login .bottom {
+  margin-bottom: 100px;
 }
 /***** footer *****/
 footer {
@@ -137,7 +151,6 @@ footer .footer_info {
   border-top: 1px solid var(--txt-color);
   border-bottom: 1px solid var(--txt-color);
   padding: 10px;
-  margin-bottom: 20px;
 }
 footer .footer_info ul {
   justify-content: space-around;
