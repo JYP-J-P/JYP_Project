@@ -22,7 +22,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		console.log('지도에서 클릭한 위치의 좌표는 ' + mouseEvent.latLng.toString() + ' 입니다.');
 	});	
 
-var imageSrc = './images/marker1.png', // 마커이미지의 주소입니다    
+var imageSrc = './images/marker.png', // 마커이미지의 주소입니다    
     imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
     imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 

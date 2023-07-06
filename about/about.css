@@ -181,7 +181,7 @@ footer {
   width: 65px;
   height: 130px;
   background: url(../common/key.png) no-repeat 50% / 90%;
-  transform: rotate(5deg);
+  transform: rotate(9deg);
 }
 .foot_key h2 {
   font-weight: 700;
