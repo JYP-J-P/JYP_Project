@@ -1,29 +1,29 @@
 @charset "utf-8";
 
 body {
-  font-family: 'Abhaya Libre', serif;
-  color: #858585;
+  font-family: var(--en-txt-font);
+  color: var(--txt-sub-color);
 }
 
-h1,
+/* h1,
 h2,
 p,
 a {
   font-family: 'Abhaya Libre', serif;
-}
+} */
 
 h1 {
-  font-size: 80px;
+  font-size: 5rem;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: var(--main-size-60);
   text-transform: capitalize;
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: var(--bg-color);
 }
 
 .flex {
@@ -32,6 +32,34 @@ body {
 
 /********** header **********/
 
+.header_bar {
+  text-transform: uppercase;
+  width: 95%;
+  margin: 20px auto;
+  height: 50px;
+  justify-content: space-between;
+}
+.header_bar .logo {
+  background: #ffffff url(../common/logo.png) no-repeat 50% / 70%;
+  width: 17%;
+  border-radius: 5px;
+}
+.header_bar ul {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 62%;
+  justify-content: space-around;
+  align-items: center;
+}
+.header_bar .login {
+  background-color: #ffffff;
+  width: 17%;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/*
 header {
   height: 65px;
   align-items: center;
@@ -39,11 +67,6 @@ header {
   padding: 10px;
   font-size: 20px;
   color: #000;
-}
-
-header p {
-  font-family: 'Gowun Batang', serif;
-  font-size: 25px;
 }
 
 header ul,
@@ -90,7 +113,13 @@ header .logo {
   text-indent: -9999px;
 }
 
+*/
+
 /********** main **********/
+
+.main p {
+  margin-top: 50px;
+}
 
 .main .main_text_box1 {
   margin: 150px auto;
@@ -99,7 +128,16 @@ header .logo {
 }
 
 .main .main_text_box1 h1 {
-  /* background: url(./images/h1_bg.png); */
+  background: url(./images/h1_bg.png) 0 5%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main .main_text_box1 p {
+  font-family: var(--kr-txt-font);
+  font-size: var(--sub-size-24);
+  line-height: 2;
 }
 
 .main .main_text_box1 .amble_img {
@@ -114,7 +152,7 @@ header .logo {
 }
 
 .main .main_text_box2 p {
-  font-size: 33px;
+  font-size: 2.063rem;
 }
 
 /********** sub_main **********/
@@ -210,11 +248,16 @@ header .logo {
 }
 
 .sub_main .text_box h1 {
-  width: 100%;
-  /* font-size: 3rem; */
+  font-size: calc(30px + 3vw);
+  /* white-space: nowrap; */
+  background: url(./images/h1_summer_collection_bg.png) 100% 70%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .sub_main .text_box span {
+  padding: 10px;
   display: block;
   text-align: center;
   position: relative;
@@ -243,6 +286,7 @@ header .logo {
   flex-direction: column;
   align-items: flex-end;
   color: #858585;
+  gap: 15px;
 }
 
 /********** last_main **********/
@@ -378,7 +422,48 @@ header .logo {
 }
 
 /********** footer **********/
+footer {
+  width: 95%;
+  margin: 0 auto 20px;
+}
+.foot_key {
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto;
+  font-weight: 700;
+  font-size: 3rem;
+}
 
+.foot_key .keybox {
+  width: 65px;
+  height: 130px;
+  background: url(../common/key.png) no-repeat 50% / 90%;
+  transform: rotate(30deg);
+}
+.foot_sns,
+.foot_go {
+  justify-content: space-between;
+  border-bottom: 1px solid var(--txt-color);
+  padding: 10px;
+}
+.foot_sns .sns {
+  width: 15%;
+  justify-content: space-between;
+}
+.foot_go h3 {
+  width: 30%;
+}
+.foot_go h3:last-child {
+  text-align: right;
+}
+.foot_go .foot_name {
+  width: 40%;
+  justify-content: space-around;
+  font-family: var(--kr-sub-font);
+}
+
+/*
 footer {
   height: 60vh;
   padding: 20px;
@@ -452,3 +537,5 @@ footer .middle span a {
   width: 70px;
   margin: 0 80px;
 }
+
+*/
