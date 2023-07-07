@@ -46,17 +46,20 @@ h2 {
   z-index: 9999;
   transition: 0.5s;
 }
+
 .header_bar .logo {
   background: #ffffff url(./common/logo.png) no-repeat 50% / 80%;
   width: 10%;
   border-radius: 5px;
   text-indent: -9999pc;
 }
+
 .header_bar a {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .header_bar ul {
   background-color: #ffffff;
   border-radius: 5px;
@@ -64,6 +67,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
 }
+
 .header_bar .private {
   justify-content: space-around;
   background-color: #ffffff;
@@ -72,11 +76,12 @@ h2 {
   text-align: center;
   line-height: 50px;
 }
+
 /********** main **********/
 
 .main .main_container {
   width: 100%;
-  height: 120vh;
+  height: 130vh;
 }
 
 .main p {
@@ -105,7 +110,7 @@ h2 {
 
 .main .main_text_box1 .amble_img {
   width: 130px;
-  margin: 150px 0;
+  margin: 160px 0 0 0;
 }
 
 .main .main_text_box2 {
@@ -266,7 +271,8 @@ h2 {
 
 .last_main .last_main_img {
   background: url(./images/last_main_img2.png) no-repeat 50% / cover;
-  height: 100vh;
+  height: 180vh;
+  width: 100%;
   margin-bottom: 20px;
   position: relative;
   font-size: var(--sub-size-24);
@@ -405,6 +411,7 @@ footer {
   width: 98%;
   margin: 0 auto 20px;
 }
+
 .foot_key {
   width: 25%;
   justify-content: space-between;
@@ -420,9 +427,11 @@ footer {
   background: url(../common/key.png) no-repeat 50% / 90%;
   transform: rotate(9deg);
 }
+
 .foot_key h2 {
   font-weight: 700;
 }
+
 .foot_sns,
 .foot_git {
   justify-content: space-between;
@@ -430,25 +439,31 @@ footer {
   border-bottom: 1px solid var(--txt-color);
   padding: 7px;
 }
+
 .foot_sns .sns {
   width: 15%;
   justify-content: space-between;
 }
+
 .foot_git {
   color: var(--txt-sub-color);
 }
+
 .foot_git h3 {
   width: 30%;
 }
+
 .foot_git h3:last-child {
   text-align: right;
 }
+
 .foot_git .foot_name {
   width: 40%;
   justify-content: space-around;
   font-family: var(--kr-sub-font);
   color: var(--txt-color);
 }
+
 /********** top_btn *********/
 
 footer .top_btn {
@@ -481,6 +496,7 @@ footer .top_btn:hover {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-10px);
   }

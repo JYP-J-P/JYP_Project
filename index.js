@@ -18,7 +18,7 @@ $('.top_btn').on('click', (e) => {
   });
 });
 
-// document.querySelector('.vegas-slide').css({ backgroundPosition: 'top' });
+// 베가스 슬라이더 
 
 $('.main_container').vegas({
   slides: [{ src: './images/main_img.png' }, { src: './images/main_img2.png' }],
