@@ -8,7 +8,7 @@
     padding:0;
     text-decoration: none;
     color:#131313;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .flex {
@@ -134,18 +134,25 @@ body {
     padding-bottom: 100px;
 }
 
+.shop_item li {
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(2px);
+}
+
 .shop_item li a {
     text-align: center;
     font-family: var(--en-txt-font);
-    background-color: rgb(255, 255, 255, 0.5);
 }
 
 .shop_item li a h3 {
+    padding-top: 10px;
     font-size: var(--font-size-20);
     font-weight:600;
 }
 
 .shop_item li a h4 {
+    padding-bottom: 10px;
     font-size: var(--font-size-18);
 }
 
@@ -157,7 +164,6 @@ body {
 .shop_item li a img {
     object-fit: cover;
     width: 15vw;
-    padding-bottom: 10px;
 }
 
 
