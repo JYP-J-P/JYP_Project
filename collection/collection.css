@@ -5,6 +5,12 @@ body {
   background-color: var(--bg-color);
   font-family: var(--en-txt-font);
   color: var(--txt-color);
+  /* opacity: 1;
+  transition-duration: 1s;
+  transition-property: opacity; */
+}
+body.fade {
+  opacity: 0;
 }
 .flex {
   display: flex;
@@ -85,10 +91,12 @@ body {
   text-transform: capitalize;
   padding: 50px 0;
   display: grid;
-  grid-template-rows: repeat(5, 610px);
-  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   place-content: center;
   gap: 1vw;
+  width: 90%;
+  margin: 0 auto;
 }
 .main_collection .collection figure {
   background-color: #ffffff;
@@ -102,6 +110,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  height: 32vw;
 }
 .main_collection .collection figure:nth-child(1),
 .main_collection .collection figure:nth-child(7),
@@ -115,24 +124,33 @@ body {
 }
 
 .main_collection .collection figure img {
-  width: 330px;
-  height: 490px;
+  /* width: 330px; */
+  width: 17vw;
+  /* height: 490px; */
+  height: 25vw;
   border-radius: 10px;
   filter: grayscale(100%);
   transition: 0.4s;
+  /* margin: 20px 20px; */
+  object-fit: cover;
+  /* min-height: 15vw; */
+  margin-top: 1vw;
+  /* margin-top: 1.5vh; */
 }
 .main_collection .collection figure img:hover {
   filter: grayscale(0);
 }
 .main_collection .collection figure .glow-big {
-  width: 750px;
-  height: 490px;
+  /* width: 750px; */
+  /* height: 490px; */
+  width: 39vw;
+  height: 25.5vw;
 }
 .main_collection .collection figure figcaption {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  padding: 20px 35px 0;
+  padding: 20px 0;
 }
 /***** footer *****/
 footer {

@@ -84,6 +84,11 @@ body {
   width: 400px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  transition: 0.4s;
+}
+.cart button:hover {
+  background-color: var(--txt-color);
+  color: var(--bg-color);
 }
 .cart button a {
   display: block;

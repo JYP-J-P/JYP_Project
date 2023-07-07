@@ -97,9 +97,14 @@ button {
   padding: 15px 0;
   font-size: var(--font-size-28);
   font-family: var(--en-txt-font);
+  transition: 0.4s;
 }
 button a {
   display: block;
+}
+button:hover {
+  background-color: var(--txt-color);
+  color: var(--bg-color);
 }
 .sub_login .top li:nth-child(1),
 .sub_login .middle li:nth-child(1),

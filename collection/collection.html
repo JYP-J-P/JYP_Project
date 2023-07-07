@@ -7,9 +7,12 @@
   <title>collection</title>
   <link rel="stylesheet" href="../common/reset.css">
   <link rel="stylesheet" href="../common/variable.css">
+  <link rel="stylesheet" href="../common/aos@3.0.0-beta.6_dist_aos.css">
   <link rel="stylesheet" href="./collection.css">
+
   <script src="../common/jquery-3.7.0.min.js"></script>
   <script src="../common/header.js"></script>
+  <script src="../common/aos@3.0.0-beta.6_dist_aos.js"></script>
   <script defer src="./collection.js"></script>
 </head>
 
@@ -33,85 +36,85 @@
     <h1>colloecton</h1>
     <h2>campaign / archive</h2>
     <section class="collection">
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img class="glow-big" src="./images/2022sc01.png" alt="여름옷을 입고 천막에 누워 책 읽는 여자">
           <figcaption>2022 summer campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img class="glow-big" src="./images/2022sc02.png" alt="볼캡을 쓰고 부엌에 앉아 주스를 마시는 여자">
           <figcaption>2022 spring campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img src="./images/2022ss.png" alt="커피가 담긴 컵을 양손으로 잡고있는 여자">
           <figcaption>2022 spring + summer</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img src="./images/2021w.png" alt="검정색 떡볶이 코트를 입고 초원에서 양팔 벌리고 있는 여자">
           <figcaption>2021 winter</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img src="./images/2021wc.png" alt="버킷햇을 쓰고 꽃다발을 들고 있는 여자">
           <figcaption>2021 winter campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img src="./images/2021fc.png" alt="커피를 마시며 걷는 볼캡 쓴 여자">
           <figcaption>2021 fall campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img class="glow-big" src="./images/2021sc01.png" alt="우측을 바라보며 꽃다발을 들고있는 여자">
           <figcaption>2021 summer campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img class="glow-big" src="./images/2021sc02.png" alt="좌측을 바라보며 쪼그려 앉은 빨간색 옷을 입은 여자">
           <figcaption>2021 spring campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img src="./images/2020fc.png" alt="좌측 하단에 꽃이 살짝 보이며 꽃다발을 안고있는 좌측을 보는 여자">
           <figcaption>2020 fall campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img src="./images/2020sc01.png" alt="좌측을 바라보며 턱을 괴고있는 여자">
           <figcaption>2020 summer campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img src="./images/2020sc02.png" alt="검정색 코트를 입고 뒷짐을 지며 바구니를 들고 있는 여자">
           <figcaption>2020 spring campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img src="./images/2020s.png" alt="귀걸이와 팔찌가 잘보이게 카메라를 응시하는 여자의 얼굴">
           <figcaption>2020spring</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img class="glow-big" src="./images/2019fwc.png" alt="꽃들 사이에서 검정 코트를 입고 우측을 바라보며 서 있는 여자의 상반신">
           <figcaption>2019 fall winter campaign</figcaption>
         </a>
       </figure>
-      <figure>
+      <figure data-aos="fade-up" data-aos-duration="2000">
         <a href="#">
           <img class="glow-big" src="./images/2019w.png" alt="카키색 겨울옷을 입고있는 여자의 상반신과 얼굴">
           <figcaption>2019 winter</figcaption>
@@ -144,6 +147,20 @@
       <h3>2023.07.02</h3>
     </div>
   </footer>
+  <script>
+    AOS.init();
+	/* 주석부분과 같이 AOS API - Global Setting 가능
+                                                              AOS.init({
+                                                                offset: 120,
+                                                                delay: 0,
+                                                                duration: 400,
+                                                                easing: 'ease',
+                                                                once: false,
+                                                                mirror: false,
+                                                                anchorPlacement: 'top-bottom'
+                                                              });    
+                                                              */
+  </script>
 </body>
 
 </html>
