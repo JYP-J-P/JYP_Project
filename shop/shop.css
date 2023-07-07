@@ -19,10 +19,6 @@
     flex-direction: column;
 }
 
-img {
-    object-fit:contain
-}
-
 /***** header ******/
 .header_bar {
   position: fixed;
@@ -86,7 +82,7 @@ body {
     top:0;
     right:0;
     z-index: -9;
-    object-fit: cover;
+    object-fit: cover bottom;
     height: 100vh;
     width: 45vw;
     transition: none;
@@ -119,6 +115,7 @@ body {
 }
 
 .shop_top img {
+    object-fit:contain;
     width: 100px;
 }
 
