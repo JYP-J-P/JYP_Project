@@ -137,6 +137,7 @@ body {
 .shop_item li a {
     text-align: center;
     font-family: var(--en-txt-font);
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
 .shop_item li a h3 {
