@@ -209,11 +209,6 @@ body {
   bottom: 50px;
   right: 40px;
   background-color: #eeecec;
-  transition: 0.5;
-}
-.contacts_continer .contacts_wrap .contacts_box .contacts_week:hover {
-  background-color: var(--txt-color);
-  color: var(--bg-color);
 }
 /***** footer ******/
 footer {
