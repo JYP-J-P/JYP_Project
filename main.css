@@ -76,7 +76,7 @@ h2 {
 
 .main .main_container {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 
 .main p {
@@ -227,13 +227,13 @@ h2 {
   position: relative;
   width: 100%;
   margin: 50px auto 30px auto;
-  font-family: 'Gowun Batang', serif;
+  font-family: "Gowun Batang", serif;
   color: var(--txt-color);
   font-size: var(--sub-size-24);
 }
 
 .sub_main .text_box span::after {
-  content: '';
+  content: "";
   background-color: black;
   position: absolute;
   bottom: 0;

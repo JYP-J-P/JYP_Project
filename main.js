@@ -24,5 +24,5 @@ $('.main_container').vegas({
   slides: [{ src: './images/main_img.png' }, { src: './images/main_img2.png' }],
   timer: false,
   delay: 5000,
-  // align: center
+  transition: 'fade2',
 });
