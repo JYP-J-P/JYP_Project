@@ -19,32 +19,37 @@ $(window).on("scroll", () => {
   prescroll = scroll;
 });
 
+// a 기본값 삭제
+$('a[href="#"]').on('click',(e)=>{
+  e.preventDefault();
+  });
+
 // 메뉴 클릭 페이지 변경시 안보였다가 몇초 뒤에 나타남
-let target = document.querySelector("a");
-$(function () {
-  $("body").fadeIn(500, function () {
-    $(this).animate(
-      {
-        top: "0",
-      },
-      500
-    );
-  });
+// let target = document.querySelector("a");
+// $(function () {
+//   $("body").fadeIn(500, function () {
+//     $(this).animate(
+//       {
+//         top: "0",
+//       },
+//       500
+//     );
+//   });
 
-  $("a").click(function () {
-    var url = $(this).attr("href");
-    $("body").animate(
-      {
-        opacity: "0",
-        // blur,
-        top: "0",
-      },
-      500,
-      function () {
-        document.location.href = url;
-      }
-    );
+//   $("a").click(function () {
+//     // var url = $(this).attr("href");
+//     $("body").animate(
+//       {
+//         opacity: "0",
+//         // blur,
+//         top: "0",
+//       },
+//       500,
+//       function () {
+//         document.location.href = url;
+//       }
+//     );
 
-    return false;
-  });
-});
+//     return false;
+//   });
+// });
