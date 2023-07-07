@@ -18,3 +18,6 @@ $(window).on('scroll', () => {
 
   prescroll = scroll;
 });
+
+//hover
+ 
