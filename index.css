@@ -47,7 +47,7 @@ h2 {
   transition: 0.5s;
 }
 .header_bar .logo {
-  background: #ffffff url(../common/logo.png) no-repeat 50% / 80%;
+  background: #ffffff url(./common/logo.png) no-repeat 50% / 80%;
   width: 10%;
   border-radius: 5px;
   text-indent: -9999pc;
