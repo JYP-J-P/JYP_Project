@@ -82,7 +82,8 @@ body {
     top:0;
     right:0;
     z-index: -9;
-    object-fit: cover bottom;
+    object-fit: cover;
+    object-position: bottom;
     height: 100vh;
     width: 45vw;
     transition: none;
@@ -114,7 +115,7 @@ body {
 
 }
 
-.shop_top img {
+.shop_top .amble {
     object-fit:contain;
     width: 100px;
 }
