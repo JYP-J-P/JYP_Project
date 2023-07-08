@@ -294,8 +294,9 @@ h2 {
 }
 
 .last_main .last_main_img .cap {
-  top: 8%;
+  top: 10%;
   left: 40%;
+  display: none;
 }
 
 .last_main .last_main_img .cap a {
@@ -323,7 +324,7 @@ h2 {
 
 .last_main .last_main_img .top {
   top: 40%;
-  left: 30%;
+  left: 35%;
 }
 
 .last_main .last_main_img .top a {
@@ -337,8 +338,8 @@ h2 {
 }
 
 .last_main .last_main_img .bottom {
-  bottom: 10%;
-  left: 40%;
+  bottom: 28%;
+  left: 68%;
 }
 
 .last_main .last_main_img .bottom a {
@@ -366,7 +367,7 @@ h2 {
 
 .last_main_sub_img figure figcaption {
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   right: 0;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);

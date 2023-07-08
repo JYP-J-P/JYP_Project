@@ -26,3 +26,7 @@ $('.main_container').vegas({
   delay: 5000,
   transition: 'fade2',
 });
+
+AOS.init({
+  duration: 1200,
+})
