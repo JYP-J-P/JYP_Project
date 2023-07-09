@@ -6,9 +6,6 @@ body {
   font-family: var(--en-txt-font);
   color: var(--txt-color);
 }
-body.fade {
-  opacity: 0;
-}
 .flex {
   display: flex;
 }
