@@ -15,7 +15,7 @@ $(window).on("load", function () {
         $(this).css({ display: "none" });
       });
     }
-  }, 30);
+  }, 20);
 });
 // 스르륵 올라오는 효과
 AOS.init({
