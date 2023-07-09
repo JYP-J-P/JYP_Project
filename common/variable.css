@@ -37,28 +37,21 @@
   color: var(--bg-color);
 }
 
+body {
+  opacity: 0;
+  transition-duration: 3s;
+  transition-property: opacity text-shadow;
+  text-shadow: 0 0 10px transparent;
+}
+
+body.fade_out {
+  opacity: 1;
+  text-shadow: 0 0 0 transparent;
+}
 header,
 footer {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-@keyframes gradient {
-  0% {
-    background-position-x: 0;
-  }
-  25% {
-    background-position-x: -100%;
-  }
-  50% {
-    background-position-x: -200%;
-  }
-  75% {
-    background-position-x: -300%;
-  }
-  100% {
-    background-position-x: -400%;
-  }
 }

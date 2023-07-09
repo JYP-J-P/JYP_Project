@@ -5,9 +5,6 @@ body {
   background-color: var(--bg-color);
   font-family: var(--en-txt-font);
   color: var(--txt-color);
-  /* opacity: 1;
-  transition-duration: 1s;
-  transition-property: opacity; */
 }
 body.fade {
   opacity: 0;
