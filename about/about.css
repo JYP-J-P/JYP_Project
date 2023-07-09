@@ -276,7 +276,7 @@ footer {
   background-color: var(--txt-sub-color);
   color: var(--bg-color);
   display: flex;
-  gap: 5vw;
+  gap: 7vw;
   font-family: var(--kr-sub-font);
 
   overflow: hidden;
