@@ -188,6 +188,35 @@ footer {
   width: 15%;
   justify-content: space-between;
 }
+/* slide */
+.foot_slide {
+  width: 100%;
+  background-color: var(--txt-sub-color);
+  color: var(--bg-color);
+  display: flex;
+  gap: 5vw;
+  font-family: var(--kr-sub-font);
+
+  overflow: hidden;
+}
+
+.foot_slide span {
+  display: inline-block;
+  font-size: var(--font-size-18);
+  animation: slide 4.5s infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-70%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 .foot_git {
   color: var(--txt-sub-color);
 }
