@@ -92,7 +92,7 @@ body {
 /***** shop_top *****/
 
 .shop_top {
-    width: 50vw;
+    width: 47vw;
     justify-content: space-between;
     margin-bottom: 3vw;
     font-size: var(--sub-size-24);
@@ -123,11 +123,11 @@ body {
 /***** 제품 이미지 파트 *****/
 
 .shop_item_list {
-    width: 50vw;
+    width: 47vw;
 }
 
 .shop_item {
-    width: 50vw;
+    width: 47vw;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -163,7 +163,7 @@ body {
 
 .shop_item li a img {
     object-fit: cover;
-    width: 15vw;
+    width: 13vw;
 }
 
 
@@ -182,5 +182,16 @@ body {
     .shop_item li a img {
         object-fit: cover;
         width: 18vw;
+    }
+
+    .shop_item li a h3 {
+        padding-top: 10px;
+        font-size: var(--font-size-18);
+        font-weight:600;
+    }
+    
+    .shop_item li a h4 {
+        padding-bottom: 10px;
+        font-size: var(--font-size-16);
     }
 }

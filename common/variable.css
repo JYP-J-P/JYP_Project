@@ -16,6 +16,7 @@
   --txt-color: #131313;
   --txt-sub-color: #858585;
   /* 폰트 사이즈 */
+  --font-size-16: 1rem;
   --font-size-18: 1.125rem;
   --font-size-20: 1.25rem;
   --font-size-28: 1.75rem;
