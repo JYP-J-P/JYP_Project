@@ -155,7 +155,7 @@ h2 {
 }
 
 .sub_main .sub_main_img {
-  background: fixed url(./images/sub_main.png) no-repeat 50% / cover;
+  background: fixed url(./images/sub_main.png) no-repeat top / cover;
   height: 80vh;
   position: relative;
   margin: 20px;
