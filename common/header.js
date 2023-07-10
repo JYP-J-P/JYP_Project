@@ -20,11 +20,11 @@ $(window).on("scroll", () => {
 });
 
 // a 기본값 삭제
-$('a[href="#"]').on('click',(e)=>{
+$('a[href="#"]').on("click", (e) => {
   e.preventDefault();
-  });
+});
 
 // 메뉴 클릭 페이지 변경시 안보였다가 몇초 뒤에 나타남
 window.addEventListener("load", () => {
-    document.body.classList.add("fade_out")
+  document.body.classList.add("fade_out");
 });

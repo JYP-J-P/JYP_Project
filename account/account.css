@@ -59,7 +59,7 @@ body {
 
 /***** login *****/
 .sub_login {
-  padding: 160px 0 40px;
+  padding: 120px 0 40px;
   text-transform: uppercase;
   flex-direction: column;
   align-items: center;
@@ -98,6 +98,7 @@ button {
   font-size: var(--font-size-28);
   font-family: var(--en-txt-font);
   transition: 0.4s;
+  margin: 10px 0;
 }
 button a {
   display: block;
@@ -111,22 +112,22 @@ button:hover {
 .sub_login .bottom li:nth-child(1) {
   color: var(--txt-color);
   font-weight: bold;
-  font-size: var(--sub-size-24);
+  font-size: var(--font-size-20);
 }
 .sub_login .top li:nth-child(2),
 .sub_login .middle li:nth-child(2),
 .sub_login .bottom li:nth-child(2) {
   color: var(--txt-sub-color);
   font-family: var(--kr-sub-font);
-  font-size: var(--font-size-18);
+  font-size: var(--font-size-16);
 }
 .sub_login .reserch {
-  margin: 20px 0 0;
-  font-size: var(--sub-size-24);
+  margin: 15px 0 0;
+  font-size: var(--font-size-20);
   color: var(--txt-sub-color);
   position: relative;
   justify-content: space-between;
-  width: 300px;
+  width: 250px;
 }
 .sub_login .reserch p:nth-child(1)::after {
   content: "/";
@@ -143,7 +144,7 @@ button:hover {
 .sub_login .bottom a {
   width: 400px;
   border-bottom: 1px solid #131313;
-  padding-top: 25px;
+  padding-top: 40px;
   justify-content: space-between;
   align-items: center;
 }
