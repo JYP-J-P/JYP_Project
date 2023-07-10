@@ -151,11 +151,12 @@ footer {
   width: 98%;
   margin: 0 auto 20px;
 }
+
 .foot_key {
   width: 25%;
   justify-content: space-between;
   align-items: center;
-  margin: 100px auto;
+  margin: 60px auto;
   font-weight: 700;
   font-size: 3rem;
 }
@@ -163,13 +164,20 @@ footer {
 .foot_key .keybox {
   width: 65px;
   height: 130px;
-  background: url(../common/key.png) no-repeat 50% / 90%;
+  background: url(./common/key.png) no-repeat 50% / 90%;
   transform: rotate(9deg);
 }
+
 .foot_key h2 {
   font-weight: 700;
   cursor: pointer;
 }
+
+.foot_sns {
+  border-top: 1px solid var(--txt-color);
+  margin-top: 10vh;
+}
+
 .foot_sns,
 .foot_git {
   justify-content: space-between;
@@ -177,56 +185,47 @@ footer {
   border-bottom: 1px solid var(--txt-color);
   padding: 7px;
 }
+
 .foot_sns .sns {
-  text-transform: capitalize;
+  flex-direction: column;
   width: 15%;
   justify-content: space-between;
 }
-/* slide */
-.foot_slide {
-  width: 100%;
-  background-color: var(--txt-sub-color);
-  color: var(--bg-color);
-  display: flex;
-  gap: 5vw;
-  font-family: var(--kr-sub-font);
 
-  overflow: hidden;
-}
-
-.foot_slide span {
-  display: inline-block;
-  font-size: var(--font-size-18);
-  animation: slide 4.5s infinite linear;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(-70%);
-  }
-  50% {
-    transform: translateX(10%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
 .foot_git {
   color: var(--txt-sub-color);
 }
+
 .foot_git a,
 .foot_git h3 {
   width: 30%;
 }
+
+.foot_git h3:nth-child(2) {
+  text-align: center;
+}
+
 .foot_git h3:last-child {
   text-align: right;
 }
-.foot_git .foot_name {
-  width: 40%;
-  justify-content: space-around;
+
+.foot_sns .foot_name {
+  flex-direction: column;
+  text-align: right;
+  width: 15%;
+  /* justify-content: space-around; */
   font-family: var(--kr-sub-font);
   color: var(--txt-color);
 }
+
+.foot_sns li {
+  margin: 5px 0;
+}
+
+.foot_sns .foot_name li img {
+  width: 40px;
+}
+
 /* .foot_git .foot_name a {
   background: linear-gradient(90deg, #858585, #f4f4f4, #131313);
   background-clip: 'text';
