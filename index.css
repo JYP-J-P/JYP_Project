@@ -156,7 +156,7 @@ h2 {
 
 .sub_main .sub_main_img {
   background: fixed url(./images/sub_main.png) no-repeat 50% / cover;
-  width: 100%;
+  width: calc(100% - 40px);
   height: 80vh;
   position: relative;
   margin: 20px;
@@ -199,6 +199,7 @@ h2 {
   width: 100%;
   padding: 0 20px;
   gap: 20px;
+  overflow: hidden;
 }
 
 .sub_main .sub_main_imgs figure {
@@ -379,6 +380,7 @@ h2 {
   gap: 20px;
   width: calc(100% - 40px);
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .last_main_sub_img figure {
