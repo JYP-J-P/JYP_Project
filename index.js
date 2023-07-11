@@ -9,7 +9,9 @@ $(window).on("load", function () {
     if (counter == 100) {
       console.log(counter)
       html.style.overflow = "auto";
-      $(".loading").animate({ opacity: "0" }, 1000);
+      $(".loading").animate({ opacity: "0" }, 700, function () {
+        $(this).css({ display: "none" });
+      });
     }
   }, 25);
 });
