@@ -38,10 +38,7 @@ h2 {
   width: 100%;
   height: 100%;
   background-color: var(--bg-color);
-  /* background-blend-mode: multiply; */
   z-index: 99999999;
-  opacity: 1;
-  transition: 0.5s ease;
 }
 
 .loading img {
@@ -478,7 +475,6 @@ footer {
   justify-content: space-between;
 }
 
-
 .foot_git {
   color: var(--txt-sub-color);
 }
@@ -507,7 +503,6 @@ footer {
 
 .foot_sns li {
   margin: 5px 0;
-
 }
 
 .foot_sns .foot_name li img {

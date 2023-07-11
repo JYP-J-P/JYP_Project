@@ -2,20 +2,16 @@
 const html = document.querySelector("html");
 html.style.overflow = "hidden";
 $(window).on("load", function () {
-  var counter = 0;
-  var c = 0;
+  let counter = 0;
 
-  var i = setInterval(function () {
+  let i = setInterval(function () {
     counter++;
-    c++;
-    if (counter == 101) {
+    if (counter == 100) {
+      console.log(counter)
       html.style.overflow = "auto";
-      clearInterval(i);
-      $(".loading").animate({ opacity: "0" }, 400, function () {
-        $(this).css({ display: "none" });
-      });
+      $(".loading").animate({ opacity: "0" }, 1000);
     }
-  }, 20);
+  }, 25);
 });
 // to top 버튼 작동
 $(window).scroll(function () {
