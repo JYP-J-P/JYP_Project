@@ -231,7 +231,7 @@ footer {
 .foot_key .keybox {
   width: 65px;
   height: 130px;
-  background: url(./common/key.png) no-repeat 50% / 90%;
+  background: url(../common/key.png) no-repeat 50% / 90%;
   transform: rotate(9deg);
 }
 
